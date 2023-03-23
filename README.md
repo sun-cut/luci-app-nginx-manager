@@ -1,18 +1,14 @@
 
-# luci-app-nginx-manager£¨Nginx¹ÜÀíÆ÷£©
+# luci-app-nginx-managerï¼ˆNginxç®¡ç†å™¨ï¼‰
 
-¸ü·½±ãµÄ¹ÜÀíopenwrtµÄnginx
+æ›´æ–¹ä¾¿çš„ç®¡ç†openwrtçš„nginx
 
-### ×¢ÒâÊÂÏî
-1. Ìæ´úÄ¬ÈÏµÄuhttpd×öÎªÂ·ÓÉºóÌ¨µÄweb·şÎñÆ÷
-2. ²å¼şÒÀÀµ+luci-nginx +luci-ssl-nginx +luci-ssl-openssl£¬²¢ÇÒ»á¿ªÆôÂ·ÓÉºóÌ¨µÄhttps¹¦ÄÜ
-3. ²å¼ş»áÌæ´úÄ¬ÈÏµÄuhttpd£¬µ«²¢²»»áÉ¾³ıuhttpd£¬Èç¹ûÄãĞèÒªÉ¾³ıuhttpd£¬ĞèÔÚ±àÒëÇ°ÔÚ¸ùÄ¿Â¼Ö´ĞĞÒÔÏÂ²Ù×÷£º
+### æ³¨æ„äº‹é¡¹
+1. ä½¿ç”¨ nginx æ›¿ä»£é»˜è®¤çš„ uhttpd åšä¸ºè·¯ç”±åå°çš„ web æœåŠ¡å™¨
+2. æ’ä»¶æ ¹æ®æ˜¯å¦å¯ç”¨ SSL ä¾èµ–+luci-nginx æˆ–è€… +luci-ssl-nginx
+3. æ’ä»¶å¹¶ä¸ä¼šåˆ é™¤ uhttpdï¼Œå¦‚æœä½ éœ€è¦åˆ é™¤ uhttpdï¼Œéœ€åœ¨ç¼–è¯‘å‰åˆ°é…ç½®é¡µé¢çš„ Network->Web Servers/Proxies->uhttpd å–æ¶ˆé€‰æ‹© uhttpd ç›¸å…³è½¯ä»¶åŒ…
 
-```bash
-sed -i 's/+uhttpd +uhttpd-mod-ubus //g' feeds/luci/collections/luci/Makefile
-```
-
-### Ğ§¹ûÕ¹Ê¾
+### æ•ˆæœå±•ç¤º
 ![nginx-manager][1]
 
   [1]: https://raw.githubusercontent.com/sundaqiang/openwrt-packages/master/img/nginx-manager.png
